@@ -44,20 +44,27 @@ body {
 }
 
 .side-upper {
-    padding: 1rem;
-    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 1rem .75rem 1.8rem;
     font-size: 1.75rem;
     font-weight: bold;
 }
 
+.side-upper > [class^="material-icons"] {
+    font-size: 1.4em;
+}
+
 .sidebar > div > ul >li{
-    padding: .5rem;
-    padding-left: 1rem;
+    padding: .75rem;
+    padding-left: 2rem;
 }
 
 .sidebar > div > ul >li > a{
     display: flex;
     align-items: center;
+    gap: 1rem;
     font-size: 1.2rem;
     font-weight: 900;
     color: white;
