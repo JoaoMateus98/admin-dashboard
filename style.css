@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container > div {
+    border: 2px solid red;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.main-container .header {
+    grid-column: 2 / -1;
+}
+
+.main-container .sidebar {
+    grid-row: 1 / -1;
+}
+
