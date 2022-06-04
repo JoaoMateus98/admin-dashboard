@@ -28,10 +28,12 @@ body {
 
 /*header*/
 .header {
+    position: relative;
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
     
 }
 
@@ -114,7 +116,19 @@ body {
 }
 
 .header-lower-right {
+    display: flex;
+    gap: 2rem;
+}
 
+.header-lower-right > button {
+    cursor: pointer;
+    background-color: var(--base-green);
+    color: white;
+    font-weight: 900;
+    border: 0;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 5.5rem;
 }
 
 /*sidebar*/
