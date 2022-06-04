@@ -33,7 +33,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.15);
     
 }
 
@@ -173,5 +173,23 @@ body {
 /*content*/
 .main-content {
     background-color: var(--secondary-grey);
+    padding: 2rem 2rem 2rem .5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.card-container > p {
+    grid-column: 1 / -1;
+    margin-left: .5rem;
+    
+}
+
+.card-container > div {
+    border: var(--test-border);
+    height: 12rem;
+    margin: .5rem;
 }
 
