@@ -20,6 +20,7 @@ a {
 :root {
     --base-green: #21a759;
     --secondary-grey: #ddddd5;
+    --secondary-letters: rgb(97, 96, 96);
     --test-border: 2px solid red;
     --card-shadow: .2rem .2rem .5rem rgba(0,0,0,0.15)
 }
@@ -27,7 +28,7 @@ a {
 .main-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20rem 1fr 20rem;
+    grid-template-columns: 20rem 1fr 22rem;
     grid-template-rows: 12rem 1fr;
 }
 
@@ -194,7 +195,7 @@ a {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
 }
 
 .card-container > p {
@@ -223,7 +224,7 @@ a {
 }
 
 .card-upper > p:nth-child(2) {
-    color: rgb(97, 96, 96);
+    color: var(--secondary-letters);
 }
 
 .card-lower {
@@ -245,13 +246,30 @@ a {
 }
 
 .announcements-container {
+    font-size: .9rem;
     margin-top: .5rem;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     border: 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     background-color: white;
+}
+
+.announcements-container > div {
+    padding: 1rem 0;
+}
+
+.announcements-container > div > p:first-of-type {
+    font-weight: 600;
+}
+
+.announcements-container > div > p:nth-child(2) {
+    color: var(--secondary-letters);
+}
+
+.announcements-container > div:nth-child(1), .announcements-container > div:nth-child(2) {
+    border-bottom: 1px solid var(--secondary-letters);
 }
 
 
