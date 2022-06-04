@@ -19,7 +19,7 @@ a {
 
 :root {
     --base-green: #21a759;
-    --secondary-grey: #e2e8f0;
+    --secondary-grey: #ddddd5;
     --test-border: 2px solid red;
     --card-shadow: .2rem .2rem .5rem rgba(0,0,0,0.15)
 }
@@ -27,8 +27,8 @@ a {
 .main-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20rem 5fr;
-    grid-template-rows: 11rem 1fr;
+    grid-template-columns: 20rem 1fr 20rem;
+    grid-template-rows: 12rem 1fr;
 }
 
 /*header*/
@@ -188,8 +188,9 @@ a {
 
 .main-content {
     background-color: var(--secondary-grey);
-    padding: 3rem 2rem 2rem .5rem;
+    padding: 2rem 0 2rem .5rem;
 }
+
 
 .card-container {
     display: grid;
@@ -206,7 +207,7 @@ a {
     background-color: white;
     border-left: .65rem solid rgb(235, 155, 8);
     border-radius: 10px;
-    height: 12rem;
+    height: 10rem;
     margin: .5rem 1rem 1rem .5rem;
     box-shadow: var(--card-shadow);
 }
@@ -221,10 +222,37 @@ a {
     font-weight: 600;
 }
 
+.card-upper > p:nth-child(2) {
+    color: rgb(97, 96, 96);
+}
+
 .card-lower {
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
+/* right-content */
+.right-content-container {
+    padding: 2rem 2rem 3rem 0;
+    /* border: var(--test-border); */
+    background-color: var(--secondary-grey);
+}
+
+.announcements > p {
+    font-weight: 600;
+}
+
+.announcements-container {
+    margin-top: .5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
 
