@@ -215,6 +215,10 @@ a {
     box-shadow: var(--card-shadow);
 }
 
+.card-container > div:hover {
+    transform: scale(1.015);
+}
+
 /*inside card*/
 .card {
     padding: 30px 20px 30px 20px;
@@ -227,6 +231,11 @@ a {
 
 .card-upper > p:nth-child(2) {
     color: var(--secondary-letters);
+}
+
+.card-lower > a > span:hover, .card-lower > a:hover{
+    transform: scale(1.08);
+    color: var(--base-green);
 }
 
 .card-lower {
